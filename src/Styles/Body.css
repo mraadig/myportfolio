@@ -1,0 +1,114 @@
+/* Body styling */
+.body {
+    background-color: #F5FCFF;
+    height: 100vh;
+    color: black;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Default layout for larger screens */
+    overflow: hidden; /* Prevents overflow issues */
+    text-align: left; /* Default text alignment */
+    
+}
+
+/* Container for main content */
+.container1 {
+    padding: 2rem;
+    width: 60%; /* Adjust width for larger screens */
+    max-width: 1200px;
+}
+
+/* Intro greeting styling */
+.intro-greeting {
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* Container for the image */
+.container2 {
+    width: 40%; /* Adjust width for larger screens */
+    margin-top: 0; /* Remove top margin for larger screens */
+}
+
+/* Image styling */
+.container2 img {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+
+/* Button styling */
+.btn {
+    
+    font-family: 'Roboto', sans-serif;
+    width: 120px;
+    height: 39px;
+    background-color: #5E3BEE;
+    border: 1px solid #5E3BEE;
+    color: white;
+    text-align: center;
+    line-height: 39px; /* Centers text vertically */
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #5E3BEE;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .body {
+        margin-top: 5rem;
+        flex-direction: column; /* Stacks elements vertically on smaller screens */
+        padding: 1rem; /* Adds padding to prevent content from touching the edges */
+    }
+
+    .container1 {
+        width: 90%;
+        padding: 1.5rem; /* Adjusts padding for smaller screens */
+    }
+
+    .container2 {
+        width: 90%; /* Full width on smaller screens */
+        margin-top: 30px; /* Margin for spacing */
+    }
+
+    .container2 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .body {
+        flex-direction: column; /* Stacks elements vertically on smaller screens */
+        padding: 1rem; /* Adds padding to prevent content from touching the edges */
+    }
+
+    .container1 {
+        margin-top: 5rem;
+        width: 100%;
+        padding: 1rem; /* Further adjusts padding */
+    }
+
+    .container2 {
+        margin-top: 5rem;
+        margin-top: 20px; /* Reduces margin for smaller screens */
+    }
+
+    .intro-greeting {
+        font-size: medium;
+    }
+
+    .btn {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
