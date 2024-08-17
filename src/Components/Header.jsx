@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
     <div className="Header">
-    <img src={img} alt='xyz'></img>
+   <a href="#home"> <img src={img} alt='xyz'></img></a>
     <nav>
     <ul>
     <li><a href="#home">Home</a></li>
