@@ -14,7 +14,7 @@ const Body = () => {
       </p>
     </div>
     <br></br>
-    <a href='#skills'><button className='btn'>Get in touch</button></a>
+    <a href='#contact'><button className='btn'>Get in touch</button></a>
     </div>
     <div className="container2">
     <img src={profile}></img>
