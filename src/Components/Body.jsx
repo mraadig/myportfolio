@@ -3,7 +3,7 @@ import '../Styles/Body.css'
 import profile from '../assets/photo1.png'
 const Body = () => {
   return (
-    <section  id="home">
+    <section  id="home" style={{background:"#F5FCFF"}}>
     <div className="body">
     <div className="container1">
     <div className="intro">
