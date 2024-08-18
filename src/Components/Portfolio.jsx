@@ -30,6 +30,8 @@ const Portfolio = () => {
           <div className="project-info">
             <h2>Myntra Clone</h2>
             <p>This project is designed to demonstrate proficiency in frontend development technologies, including HTML, CSS, and JavaScript. The clone offers a similar user experience to Myntra, showcasing various fashion products, allowing users to browse categories, view product details, and add items to their cart.</p>
+            <a href="https://ecommercecloneakg.netlify.app/" target="_blank" rel="noopener noreferrer" className="project-link">View Live</a>
+            <br></br>
             <a href="https://github.com/mraadig/Myntra-Clone" target="_blank" rel="noopener noreferrer" className="project-link">View on GitHub</a>
           </div>
         </div>

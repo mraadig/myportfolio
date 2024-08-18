@@ -1,114 +1,124 @@
-/* Body styling */
-.body {
+/* General styling for the body component */
+
+  
+  /* or add padding to the home section */
+  #home {
+    padding-top: 60px;
     background-color: #F5FCFF;
-    height: 100vh;
-    color: black;
+  }
+  
+  .body {
+    margin-top: 60px;
     display: flex;
-    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-direction: row; /* Default layout for larger screens */
-    overflow: hidden; /* Prevents overflow issues */
-    text-align: left; /* Default text alignment */
-    
-}
-
-/* Container for main content */
-.container1 {
-    padding: 2rem;
-    width: 60%; /* Adjust width for larger screens */
-    max-width: 1200px;
-}
-
-/* Intro greeting styling */
-.intro-greeting {
-    font-weight: bold;
-    font-size: larger;
-}
-
-/* Container for the image */
-.container2 {
-    width: 40%; /* Adjust width for larger screens */
-    margin-top: 0; /* Remove top margin for larger screens */
-}
-
-/* Image styling */
-.container2 img {
-    width: 100%;
-    height: auto;
-    padding: 2rem;
-}
-
-/* Button styling */
-.btn {
-    
-    font-family: 'Roboto', sans-serif;
-    width: 120px;
-    height: 39px;
-    background-color: #5E3BEE;
-    border: 1px solid #5E3BEE;
-    color: white;
+    padding: 20px;
     text-align: center;
-    line-height: 39px; /* Centers text vertically */
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 5px; /* Optional: rounded corners */
-}
-
-.btn:hover {
-    background-color: transparent;
-    color: #5E3BEE;
-    cursor: pointer; /* Changes cursor to pointer on hover */
-}
-
-/* Responsive design adjustments */
-@media (max-width: 768px) {
+  }
+  
+  /* Container styling */
+  .container1, .container2 {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  /* Intro section styling */
+  .intro {
+    margin-bottom: 20px;
+  }
+  
+  .intro-greeting {
+    font-size: 1.2rem;
+  }
+  
+  .intro-title {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .intro-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Button styling */
+  .body .btn {
+    padding: 10px 20px;
+    background-color: #5E3BEE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  /* Profile image styling */
+  .container2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Mobile (up to 600px) - Image below container1 */
+  @media (max-width: 600px) {
     .body {
-        margin-top: 5rem;
-        flex-direction: column; /* Stacks elements vertically on smaller screens */
-        padding: 1rem; /* Adds padding to prevent content from touching the edges */
+      flex-direction: column;
     }
-
-    .container1 {
-        width: 90%;
-        padding: 1.5rem; /* Adjusts padding for smaller screens */
+  
+    .container1, .container2 {
+      width: 100%;
     }
-
-    .container2 {
-        width: 90%; /* Full width on smaller screens */
-        margin-top: 30px; /* Margin for spacing */
-    }
-
-    .container2 img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  /* Tablet (600px to 1024px) - Image below container1 */
+  @media (min-width: 601px) and (max-width: 1024px) {
     .body {
-        flex-direction: column; /* Stacks elements vertically on smaller screens */
-        padding: 1rem; /* Adds padding to prevent content from touching the edges */
+      flex-direction: column;
     }
-
-    .container1 {
-        margin-top: 5rem;
-        width: 100%;
-        padding: 1rem; /* Further adjusts padding */
+  
+    .container1, .container2 {
+      width: 100%;
     }
-
-    .container2 {
-        margin-top: 5rem;
-        margin-top: 20px; /* Reduces margin for smaller screens */
+  
+    .intro-title {
+      font-size: 2.5rem;
     }
-
-    .intro-greeting {
-        font-size: medium;
+  
+    .intro-description {
+      font-size: 1.1rem;
     }
-
+  
     .btn {
-        width: 100px;
-        height: 35px;
-        font-size: 14px;
+      font-size: 1.1rem;
     }
-}
+  }
+  
+  /* Desktop (above 1024px) - Image next to container1 */
+  @media (min-width: 1025px) {
+    .body {
+      flex-direction: row;
+      justify-content: center; /* Center the containers */
+      text-align: left;
+      gap: 20px; /* Optional: Adds consistent spacing between the containers */
+    }
+  
+    .container1, .container2 {
+      width: 48%; /* Slightly reduce the width to make space for gap */
+      margin-bottom: 0;
+    }
+  
+    .intro-title {
+      font-size: 3rem;
+    }
+  
+    .intro-description {
+      font-size: 1.2rem;
+    }
+  
+    .btn {
+      font-size: 1.2rem;
+    }
+  }
